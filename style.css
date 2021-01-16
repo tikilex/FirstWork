@@ -72,6 +72,10 @@ html, body {
 .footer-mobile-items {
     display: none;
 }
+.btn-danger {
+    position: fixed;
+    bottom: 450px;
+}
 @media (max-width : 678px) {
     .header-right-container {
         display: none;
