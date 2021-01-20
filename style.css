@@ -5,10 +5,16 @@ html, body {
     font-family: 'Xanh Mono', monospace;
     font-size: 22.6px;
 }
+.container {
+    max-width:1200px;
+}
 .img-container {
     background-image: url('img/background.jpg');
     height:100vh;
     width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .header {
     display:flex;
@@ -33,24 +39,22 @@ html, body {
     padding-right: 10px;
 }
 .header-right-item {
-    padding-right: 12px;
+    padding-right: 15px;
 }
 .header-nav-items {
     padding-left: 10px;
 }
 .header-nav-item {
-    padding-left: 12px ;
+    padding-left: 15px ;
 }
 .header-nav-item:hover {
     text-decoration: underline;
     cursor: pointer;
-    padding-left: 12px ;
     color: rgb(206, 206, 206);
 }
 .header-right-item:hover {
     text-decoration: underline;
     cursor: pointer;
-    padding-right: 12px;
     color: rgb(206, 206, 206);
 }
 .header-title {
@@ -72,10 +76,7 @@ html, body {
 .footer-mobile-items {
     display: none;
 }
-.btn-danger {
-    position: fixed;
-    bottom: 450px;
-}
+
 @media (max-width : 678px) {
     .header-right-container {
         display: none;
