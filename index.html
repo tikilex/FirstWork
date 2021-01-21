@@ -1,16 +1,19 @@
 <HTML>
-    <head>
-        <title>226 club</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-     </head>
-     
-     <body>
 
-<!-- Button trigger modal -->
+<head>
+  <title>226 club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@200&family=Viaoda+Libre&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Button trigger modal -->
   <!-- Modal -->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -49,38 +52,99 @@
       </div>
     </div>
   </div>
-      
-         <div class="img-container">
-          <div class="container">
-        <div class="header">
-          <div class="header-nav-container header-item">
-              <ul class="header-nav-items">
-                  <li onclick="window.location.href='parthners.html'" class="header-nav-item">Parthners</li>
-                  <li onclick="window.location.href='about.html'" class="header-nav-item">About</li>
-                  <li onclick="window.location.href='contacts.html'" class="header-nav-item">Contact</li>
-              </ul>
-               </div>
-          <div class="header-title-container header-item">
-            <span class="header-title"> 226 CLUB </span>
-          </div>  
+
+  <div class="img-container">
+    <div class="container">
+      <div class="header">
+        <div class="header-nav-container header-item">
+          <ul class="header-nav-items">
+            <li onclick="window.location.href='parthners.html'" class="header-nav-item">Parthners</li>
+            <li onclick="window.location.href='about.html'" class="header-nav-item">About</li>
+            <li onclick="window.location.href='contacts.html'" class="header-nav-item">Contact</li>
+          </ul>
+        </div>
+        <div class="header-title-container header-item">
+          <span class="header-title"> 226 CLUB </span>
+        </div>
         <div class="header-right-container header-item">
-            <ul class="header-right-items">
-                <li class="header-right-item" data-bs-toggle="modal" data-bs-target="#loginModal" >Login</li>
-                <li class="header-right-item" data-bs-toggle="modal" data-bs-target="#registerModal">Sign Up</li>
-            </ul>
-        </div>
-        </div>
-        <div class="main">
-            <div class="footer">
-                <span class="footer-copyright-content">© 226club 2021</span>
-                <ul class="footer-mobile-items">
-                    <li class="footer-mobile-item">Login</li>
-                    <li class="footer-mobile-item">Sign Up</li>
-                </ul>
-            </div>
-        </div>
+          <ul class="header-right-items">
+            <li class="header-right-item" data-bs-toggle="modal" data-bs-target="#loginModal">Login</li>
+            <li class="header-right-item" data-bs-toggle="modal" data-bs-target="#registerModal">Sign Up</li>
+          </ul>
         </div>
       </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-     </body>   
-    </HTML>
+      <div class="main">
+        <div class="presentation-container">
+          <div class="presentation"></div>
+        </div>
+        <div class="gamebox-container">
+          <div class="gamebox">
+            <div class="title-container">
+              <div class="title">
+                <span>The color of this background is <span id="color-text">dark</span></span>
+              </div>
+              <div class="title-discription">
+                <span>Click on colored block to change it!</span>
+              </div>
+          </div>
+          <div class="colors-container">
+            <div class="colors">
+                <div id="blue" class="colors-item-blue colors-box"></div>
+                <div id="red" class="colors-item-red colors-box"></div>
+                <div id="purple" class="colors-item-purple colors-box"></div>
+                <div id="green" class="colors-item-green colors-box"></div>
+                <div id="pink" class="colors-item-pink colors-box"></div>
+                <div id="yellow" class="colors-item-yellow colors-box"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <span class="footer-copyright-content">© 226club 2021</span>
+        <ul class="footer-mobile-items">
+          <li class="footer-mobile-item">Login</li>
+          <li class="footer-mobile-item">Sign Up</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
+  <script>
+    
+    const blue = document.getElementById('blue');
+    const red = document.getElementById('red');
+    const purple = document.getElementById('purple');
+    const green = document.getElementById('green');
+    const pink = document.getElementById('pink');
+    const yellow = document.getElementById('yellow');
+    const colorText = document.getElementById('color-text')
+    blue.onclick = function() {
+      colorText.innerText = "blue";
+      colorText.style.color = "#0047ff";
+    }
+    red.onclick = function() {
+      colorText.innerText = "red"
+      colorText.style.color = "rgb(255, 0, 0)";
+    }
+    purple.onclick = function() {
+      colorText.innerText = "purple"
+      colorText.style.color = "rgb(111, 0, 255)";
+    }
+    green.onclick = function() {
+      colorText.innerText = "green"
+      colorText.style.color = "#03ff1c";
+    }
+    pink.onclick = function() {
+      colorText.innerText = "pink"
+      colorText.style.color = "#ff049b";
+    }
+    yellow.onclick = function() {
+      colorText.innerText = "yellow"
+      colorText.style.color = "rgb(255, 225, 74)";
+    }
+  </script>
+</body>
+</HTML>
