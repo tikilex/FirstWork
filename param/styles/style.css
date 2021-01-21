@@ -10,7 +10,7 @@ html, body {
     max-width: 1300px;
 }
 .img-container {
-    background-image: url('public/img/background.jpg');
+    background-image: url('../img/background.jpg');
     width:100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,7 +84,7 @@ html, body {
     margin-top: 100px;
 }
 .presentation {
-    background-image: url('public/img/pres.png');
+    background-image: url('../img/pres.png');
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,7 +93,7 @@ html, body {
     width: 800px;
 }
 .gamebox {
-    background-image: url('public/img/game.png');
+    background-image: url('../img/game.png');
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
