@@ -5,6 +5,10 @@
     const pink = document.getElementById('pink');
     const yellow = document.getElementById('yellow');
     const colorText = document.getElementById('color-text')
+    const mainPicture = document.getElementById('mp')
+    const firstPicture = document.getElementById('fp')
+    const secondPicture = document.getElementById('sp')
+    const thirdPicture = document.getElementById('tp')
 
     blue.style.background = "rgba(0, 38, 137, 0.69)";
     red.style.background = "rgba(92, 0, 0, 0.69)";
@@ -12,6 +16,7 @@
     green.style.background = "rgba(0, 92, 9, 0.69)";
     pink.style.background = "rgba(153, 0, 92, 0.69)";
     yellow.style.background = "rgba(255, 226, 74, 0.69)";
+    mainPicture.style.backgroundImage = "url('param/img/fp.png')"; 
     
     blue.onclick = function() {
       if (blue.style.background === "rgba(0, 38, 137, 0.69)") {
@@ -97,6 +102,7 @@
         colorText.style.color = "#ffffff";
       }
     }
+
     function reset(){
       yellow.style.background = "rgba(255, 226, 74, 0.69)";
       blue.style.background = "rgba(0, 38, 137, 0.69)";
@@ -104,4 +110,54 @@
       purple.style.background = "rgba(86, 0, 197, 0.69)"
       green.style.background = "rgba(0, 92, 9, 0.69)"
       pink.style.background = "rgba(153, 0, 92, 0.69)"
+    }
+  
+    function swithImg() {
+      const imgName = mainPicture.style.backgroundImage
+
+      if (imgName === 'url("param/img/fp.png")') {
+        setSecondImg();
+      }
+
+      if (imgName === 'url("param/img/sp.jpg")') {
+        setThirdImg();
+      }
+
+      if (imgName === 'url("param/img/tp.jpg")') {
+        setFirstImg();
+      }
+    }
+    let timer = setInterval(swithImg, 5000)
+
+    firstPicture.onclick = function() {
+      clearInterval(timer);
+      setFirstImg();
+      setTimeout(() => { 
+        timer = setInterval(swithImg, 5000)},10000)
+    }
+
+    secondPicture.onclick = function() {
+      clearInterval(timer);
+      setSecondImg();
+      setTimeout(() => { 
+        timer = setInterval(swithImg, 5000)},10000)
+    }
+
+    thirdPicture.onclick = function() {
+      clearInterval(timer);
+      setThirdImg();
+      setTimeout(() => { 
+        timer = setInterval(swithImg, 5000)},10000)
+    }
+   
+    function setFirstImg() {
+      mainPicture.style.backgroundImage = "url('param/img/fp.png')"
+    }
+
+    function setSecondImg() {
+      mainPicture.style.backgroundImage = "url('param/img/sp.jpg')"
+    }
+
+    function setThirdImg() {
+      mainPicture.style.backgroundImage = "url('param/img/tp.jpg')"
     }

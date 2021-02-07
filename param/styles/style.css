@@ -180,6 +180,100 @@ html, body {
 .colors-item-pink:hover {
     background: #ff049b;
 }
+.pictures-controller-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+.pictures-controller {
+    background-image: url('../img/cosmonautbox.png');
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pictures-title-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.pictures-title {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+.picture {
+    display: flex;
+    height: 150px;
+    width: 150px;
+}
+.main-picture {
+    height: 400px;
+    align-items: center;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+}
+.pictures-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 790px;
+}
+.picturesbox-containter {
+    margin-top: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 500px;
+    padding-bottom: 20px;
+}
+.first-picturebox {
+    background-image: url('../img/fp.png');
+    background-position: center;
+    background-size: cover;
+}
+.second-picturebox {
+    background-image: url('../img/sp.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.third-picturebox {
+    background-image: url('../img/tp.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.picture:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+.titleshadow {
+    text-shadow: -0   -1px 0   #000000,
+     0   -1px 0   #000000,
+    -0    1px 0   #000000,
+     0    1px 0   #000000,
+    -1px -0   0   #000000,
+     1px -0   0   #000000,
+    -1px  0   0   #000000,
+     1px  0   0   #000000,
+    -1px -1px 0   #000000,
+     1px -1px 0   #000000,
+    -1px  1px 0   #000000,
+     1px  1px 0   #000000,
+    -1px -1px 0   #000000,
+     1px -1px 0   #000000,
+    -1px  1px 0   #000000,
+     1px  1px 0   #000000;
+}
 @media(max-width: 1920px) {
     .container {
     max-width: 1500px;
@@ -243,6 +337,33 @@ html, body {
         width: 100%;
         justify-content: space-evenly;
     }
+    .gamebox {
+        background-size: cover;
+    }
+    .picture {
+        width: 80px;
+        height: 80px;
+    }
+    .pictures-container {
+        width: auto;
+    }
+    .picturesbox-containter {
+        margin:0;
+        padding: 10px 10px;
+        width: 100%;
+    }
+    .pictures-title {
+        text-align: center;
+    }
+    .pictures-controller-container {
+        margin: 0px;
+    }
+    .main-picture {
+        height: 200px;
+    }
+    .pictures-title {
+        font-size: 25px;
+    }
 }
 @media (max-width : 740px) {
     .colors {
@@ -255,10 +376,10 @@ html, body {
     .title {
         text-align: center;
         padding: 15px 0;
-        font-size: 18px;
+        font-size: 20px;
     }
     .title-discription {
-        font-size: 14px;
+        font-size: 15px;
     }
     .presentation-container, .gamebox-container {
         margin: 0;
